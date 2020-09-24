@@ -49,8 +49,13 @@ width: 8%;
  background-image: url("../img/back06.png");
   background-repeat: repeat;
   	font-family: 'Bebas Neue', cursive;
+}
 
-
+.battleList{
+		background-color: black;
+ background-image: url("../img/back07.png");
+  background-repeat: repeat;
+  	font-family: 'Bebas Neue', cursive;
 }
 
 .title{
@@ -68,7 +73,7 @@ width: 8%;
 
 .headline{
 		font-family: 'Bebas Neue', cursive;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .tbody{
@@ -81,6 +86,35 @@ width: 8%;
 
 .join{
 	margin-right: 5%;
+}
+
+.stop{
+	margin-left: 1px;
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	background-color: red;
+	color: black;
+	border:1px solid black;
+}
+
+.stop:hover{
+		background-color: #000;
+	color: #fff;
+    border: 1px solid white;
+}
+
+.active{
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	background-color: green;
+	color: black;
+	border:1px solid black;
+}
+
+.active:hover{
+		background-color: #000;
+	color: #fff;
+    border: 1px solid white;
 }
 
 .vote{
@@ -162,4 +196,107 @@ width: 8%;
 
 .soundcloud{
 text-shadow: 2px 2px #f50;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #181818;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-title{
+	font-size: 50px;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.min-h-screen{
+	    min-height: 0vh;
+}
+
+.discordBtn{
+	margin-top: 6px;
+	background-color: #7289da;
+}
+
+.singinBtn{
+	background-color: #000;
+    border: 1px solid;
+}
+
+.singinBtn:hover{
+	background-color: #fff;
+	color: #000;
+    border: 1px solid black;
+}
+
+.DiscordLogo{
+	margin-top: 7px;
+	width: 8%;
+}
+.publishBtn{
+
+		font-size: 20px;
+		font-family: 'Bebas Neue', cursive;
+		background-color: #000;
+    border: 1px solid;
+}
+
+.publishBtn:hover{
+		background-color: #fff;
+		color: #000;
+    border: 1px solid black;
+}
+
+.draftBtn{
+	font-size: 20px;
+		font-family: 'Bebas Neue', cursive;
+	margin-top: 5px;
+		background-color: #fff;
+		color: #000;
+    border: 1px solid black;
+}
+
+.draftBtn:hover{
+	margin-top: 5px;
+		background-color: #7289da;
+		color: #000;
+    border: 1px solid;
+}
+
+.divBtn{
+    position: absolute;
+    right: 9%;
+    margin-top: 0.5%;
 }
