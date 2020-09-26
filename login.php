@@ -1,5 +1,7 @@
 <?php
 
+/*Code = kEixLadxHUqAP2FKNbIdrqs0MciGM6*/
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 ini_set('max_execution_time', 300); //300 seconds = 5 minutes. In case if your CURL is slow and is loading too much (Can be IPv6 problem)
@@ -7,6 +9,8 @@ error_reporting(E_ALL);
 
 define('OAUTH2_CLIENT_ID', '758513164710051890');
 define('OAUTH2_CLIENT_SECRET', 'AJRw4y7CYSVxb7S6nV56w_XekKE01pKa');
+define('API_ENDPOINT', 'https://discord.com/api/v6');
+define('REDIRECT_URI', 'http://localhost/ParticaWeb/');
 
 $authorizeURL = 'https://discord.com/api/oauth2/authorize';
 $tokenURL = 'https://discord.com/api/oauth2/token';
@@ -14,6 +18,22 @@ $apiURLBase = 'https://discord.com/api/users/@me';
 
 session_start();
 
+/*
+public function exchange_code($code){
+	$data = array(
+		'client_id' => OAUTH2_CLIENT_ID,
+		'client_secret' => OAUTH2_CLIENT_SECRET,
+		'grant_type'=> 'authorization_code',
+		'code' => $code,
+		'redirect_uri' => REDIRECT_URI
+	);
+
+	$r = ('Location: https://discordapp.com/api/oauth2/authorize' . '?' . http_build_query($data));
+
+  	$r.raise_for_status();
+  	$myJSON = json_encode($r);
+   	echo $myJSON;
+}*/
 
 // Start the login process by sending the user to Discord's authorization page
 if(get('action') == 'login') {

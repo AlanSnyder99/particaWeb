@@ -1,0 +1,34 @@
+*Users
+	-id
+	-rolId
+	-email
+	-password
+	-firstname
+	-lastname
+	-timestamp
+
+*Roles
+	-id
+	-role
+
+*Battles
+	-id
+	-title
+	-createdDate
+	-state
+	-samplesLink
+	-tags
+	-maxVotes
+	-rules
+
+*Submissions
+	-id
+	-battlesId
+	-userId
+	-soundcloudLink
+	-voteCount
+
+*Votes
+	-id
+	-userId
+	-submissionsId
